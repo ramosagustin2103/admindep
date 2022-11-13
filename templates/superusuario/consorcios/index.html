@@ -1,0 +1,37 @@
+{% extends 'raiz.html' %}
+{% load staticfiles %}
+
+{% block titulo %}
+  Clubes
+{% endblock %}
+
+{% block breadcrum %}
+  {% include 'comunes/breadcrum.html' with bpadre="clubes" %}
+{% endblock %}
+
+{% block header %}
+  Clubes
+{% endblock %}
+
+{% block contenido %}
+<div class="row">
+  <div class="col-md-3">
+    {% include 'superusuario/clubes/barra.html' %}
+  </div>
+
+  <div class="col-md-9">
+    <div class="panel panel-border panel-pink">
+      <div class="panel-heading">
+        <h3 class="panel-title">Ultimos clubes cargados</h3>
+      </div>
+      <div class="panel-body">
+        <div class="table-responsive">
+          {% include 'superusuario/clubes/tabla.html' %}
+          <a href="{% url 'cons_registro' %}" class="btn btn-link btn-block">Ver mas</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endblock %}

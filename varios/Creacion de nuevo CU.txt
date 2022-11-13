@@ -1,0 +1,18 @@
+- Crear contribuyente. OK
+- Gestionar puntos de venta
+	- Solicitar el certificado digital (computador) desde mi CUIT y subir el csr generado desde mi sistema
+- Crear Perfil del contribuyente (TaxPayerProfile). OK
+- Cargar logo en Taxpayerextras
+- Crear cuenta de mercadopago
+- Crear Club. OK
+- Crear usuarios administrativo y contable
+- Agregar los usuarios anteriores en el club
+- Crear Plan de cuentas.
+- Crear "Expensas" (Ingreso Primario). OK
+- Crear los gastos necesarios (primarios o no)
+	- Si tiene sueldos crear gasto sueldos primario
+	- Consultar los gastos comunes de la entidad. Crear la cuenta contable y crear el gasto
+- Crear formas de cobro. MercadoPago es primario
+- Crear acreedores primarios
+	- AFIP y rentas
+- Agregar socios y dominios

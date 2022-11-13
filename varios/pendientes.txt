@@ -1,0 +1,58 @@
+TAREAS DIARIAS
+pasar mp a admindep
+cargar comarca interes
+cargar saldos
+ver como trabajar en git
+ver grafico facturacion
+
+
+
+
+
+PRIORIDAD 1
+recibo c
+excel
+
+PRIORIDAD 2
+agregar estado de cuenta del socio en la vista del socio
+tipo de usuario directivo
+pagina de aterrizaje 
+reclamos
+control de accesos p/club y para sporting
+bitacora de errores  https://stackoverflow.com/questions/19256919/location-of-django-logs-and-errors
+
+PRIORIDAD 3
+no mandarle al cliente link
+modal crear nuevo objeto
+arreglar www.sportingclubsalta.com
+todo pago
+pago facil
+mejorar descuento si selecciona todo socio
+
+
+
+
+COMERCIALIZACION
+hablar con hugo, programar reunion en primo pano
+contactar chacras una vez desarrollado usuario directivo
+contactar tipal una vez desarrollado reclamos
+contactar cachorros
+contactar gyt
+contactar juventud
+contactar vertientes a travez de ceci
+contactar dptos perez zanier por marta
+contactar lucinda norte por tomas
+
+
+
+
+
+PRADO
+preguntar cheque rechazado
+poner mal documetos
+
+SPORTING
+cargar saldos
+
+COMARCA
+consultar datos faltantes

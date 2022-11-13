@@ -1,0 +1,70 @@
+{% extends 'raiz.html' %}
+{% load staticfiles %}
+{% load humanize %}
+
+{% block titulo %}
+  Conceptos a facturar
+{% endblock %}
+
+{% block breadcrum %}
+  {% include 'comunes/breadcrum.html' with bpadre="facturacion" bhijo1="conceptos" %}
+{% endblock %}
+
+{% block header %}
+  Conceptos a facturar
+{% endblock %}
+
+{% block contenido %}
+<div class="row">
+  <div class="col-md-3">
+    {% include 'creditos/barra.html' %}
+  </div>
+  <div class="col-md-9">
+    <div class="card-box">
+      <div class="row">
+        <div class="col-xs-12">
+          <a href="{% url 'nuevo-conceptos' %}" class="btn btn-pink pull-right">
+            <i class="fa fa-plus"></i> Nuevos conceptos
+          </a>
+        </div>
+      </div>
+      <br>
+      <div class="table-responsive">
+        <table class="table anopa display nowrap" style="width:100%">
+            <thead>
+            <tr>
+                <th width="20"></th>
+                <th width="20"></th>
+                <th>Socio</th>
+                <th>Concepto</th>
+                <th>Periodo</th>
+                <th class="text-right">Capital</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for concepto in conceptos %}
+                <tr>
+                    <td class="text-center">
+                    <a href="{% url 'editar-concepto' pk=concepto.pk %}" id="envio" class="btn btn-icon btn-bordered btn-warning btn-xs">
+                        <i class="fa fa-pencil"></i>
+                    </a>
+                    </td>
+                    <td class="text-center">
+                    <a href="{% url 'eliminar-concepto' pk=concepto.pk %}" id="envio" class="btn btn-icon btn-bordered btn-danger btn-xs">
+                        <i class="fa fa-trash"></i>
+                    </a>
+                    </td>
+                    <td>{{ concepto.socio }}</td>
+                    <td>{{ concepto.ingreso }}</td>
+                    <td>{{ concepto.periodo|date:"Y-m" }}</td>
+                    <td class="text-right">
+                        {{ concepto.capital|intcomma }}
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+      </div>
+    </div>
+</div>
+{% endblock %}

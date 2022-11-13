@@ -1,0 +1,15 @@
+# Custom
+*.pyc
+__ pycache __/
+admindepenv/
+/admindep/settings.py
+admindep.sock
+/src/
+/requirements.txt
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json

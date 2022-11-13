@@ -1,0 +1,25 @@
+{% extends 'raiz.html' %}
+{% load staticfiles %}
+
+{% block titulo %}
+  Nuevo club
+{% endblock %}
+
+{% block breadcrum %}
+  {% include 'comunes/breadcrum.html' with bpadre="clubes" bhijo1="nuevo" %}
+{% endblock %}
+
+{% block header %}
+  Nuevo club
+{% endblock %}
+
+{% block contenido %}
+  <div class="row">
+  	<div class="col-md-3">
+      {% include 'superusuario/clubes/barra.html' %}
+    </div>
+    <div class="col-md-6">
+	    {% include 'comunes/simple-form-sincancelar.html' %}
+    </div>
+  </div>
+{% endblock %}

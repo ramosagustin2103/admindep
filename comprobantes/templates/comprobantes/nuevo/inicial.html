@@ -1,0 +1,26 @@
+{% extends extension %}
+
+{% block panel-body %}
+  {% for field in wizard.form %}
+    {% if forloop.counter == 3 %}
+    <br>
+    <div class="panel-group" id="configuraciones-avanzadas">
+      <a data-toggle="collapse" data-parent="#configuraciones-avanzadas" href="#config" aria-expanded="false" class="collapsed">
+        >> Configuraciones avanzadas
+      </a>
+      <div id="config" class="panel-collapse collapse">
+    {% endif %}
+      <p>
+        {{field.label_tag}}
+        {{field}}
+      </p>
+    {% if forloop.counter == 4 %}
+      </div>
+    </div>
+    {% endif %}
+  {% endfor %}
+{% endblock %}
+
+{% block js %}
+  {% include 'comunes/datepicker.html' %}
+{% endblock %}
